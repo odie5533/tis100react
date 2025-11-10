@@ -1,0 +1,157 @@
+.explore-page {
+  padding-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff00ff;
+}
+
+.explore-hero {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffccff 0%, #ccffff 100%);
+}
+
+.random-site-mega-button {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  animation: mega-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mega-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 153, 255, 0.8);
+  }
+}
+
+.mega-icon {
+  font-size: 3rem;
+  animation: spin 4s linear infinite;
+}
+
+.mega-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mega-subtext {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.surf-mode-toggle {
+  margin-top: 1rem;
+}
+
+.surf-mode-toggle label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.surf-mode-toggle input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.surf-mode-preview {
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.surf-mode-preview h3 {
+  margin-bottom: 1rem;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.site-of-day {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.featured-site {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border: 3px solid #ff6600;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.featured-site:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.featured-site-icon {
+  font-size: 5rem;
+  flex-shrink: 0;
+}
+
+.featured-site-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6600;
+}
+
+.featured-site-info p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.featured-site-stats {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.trending-section,
+.new-sites-section {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .random-site-mega-button {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .mega-icon {
+    font-size: 2rem;
+  }
+
+  .mega-text {
+    font-size: 1.5rem;
+  }
+
+  .featured-site {
+    flex-direction: column;
+    text-align: center;
+  }
+}

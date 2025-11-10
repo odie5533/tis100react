@@ -1,0 +1,405 @@
+/* Global Retro Styles */
+:root {
+  --retro-blue: #0066cc;
+  --retro-yellow: #ffcc00;
+  --retro-pink: #ff69b4;
+  --retro-cyan: #00ffff;
+  --retro-lime: #00ff00;
+  --retro-purple: #9370db;
+  --retro-gray: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #e0e0e0;
+  color: #000;
+}
+
+/* Retro Button Styles */
+.retro-button {
+  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
+  border: 2px outset #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.retro-button:hover {
+  background: linear-gradient(180deg, #ffff99 0%, #ffcc00 100%);
+  border-color: #ffff99;
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.retro-button:active {
+  border: 2px inset #cccccc;
+  transform: translateY(0);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.retro-button-primary {
+  background: linear-gradient(180deg, #66ccff 0%, #0099cc 100%);
+  color: white;
+  border-color: #66ccff;
+}
+
+.retro-button-primary:hover {
+  background: linear-gradient(180deg, #99ddff 0%, #00aadd 100%);
+}
+
+.retro-button-danger {
+  background: linear-gradient(180deg, #ff9999 0%, #cc0000 100%);
+  color: white;
+  border-color: #ff9999;
+}
+
+.retro-button-success {
+  background: linear-gradient(180deg, #99ff99 0%, #00cc00 100%);
+  color: white;
+  border-color: #99ff99;
+}
+
+/* Retro Card/Panel Styles */
+.retro-card {
+  background: white;
+  border: 3px solid #666;
+  border-radius: 0;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.retro-panel {
+  background: linear-gradient(180deg, #f0f0f0 0%, #d0d0d0 100%);
+  border: 3px ridge #999;
+  padding: 1rem;
+}
+
+/* Retro Input Styles */
+.retro-input {
+  border: 2px inset #999;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  background: white;
+}
+
+.retro-input:focus {
+  outline: 2px solid var(--retro-blue);
+  outline-offset: 2px;
+}
+
+.retro-textarea {
+  border: 2px inset #999;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Courier New', monospace;
+  background: white;
+  resize: vertical;
+}
+
+/* Retro Select Dropdown */
+.retro-select {
+  border: 2px outset #999;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+/* Visitor Counter */
+.visitor-counter {
+  background: #000;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 3px ridge #666;
+  display: inline-block;
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.5);
+  letter-spacing: 0.2rem;
+}
+
+/* Under Construction GIF */
+.under-construction {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 3px solid #000;
+  font-family: 'Impact', sans-serif;
+  animation: blink 1s step-start infinite;
+}
+
+/* Marquee Text */
+.marquee-text {
+  background: #ff00ff;
+  color: #ffff00;
+  padding: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+.marquee-text span {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+/* Star Background */
+.star-background {
+  background: #000033;
+  background-image:
+    radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 3px),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 2px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 1px, transparent 2px);
+  background-size: 550px 550px, 350px 350px, 250px 250px;
+  background-position: 0 0, 40px 60px, 130px 270px;
+}
+
+/* Tiled Background Patterns */
+.bg-pattern-stars {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="15">⭐</text></svg>');
+  background-repeat: repeat;
+}
+
+.bg-pattern-hearts {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="15">💖</text></svg>');
+  background-repeat: repeat;
+}
+
+/* Retro Grid */
+.retro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Site Thumbnail */
+.site-thumbnail {
+  background: white;
+  border: 3px solid #000;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.site-thumbnail:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  border-color: var(--retro-yellow);
+}
+
+.site-thumbnail-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-thumbnail-title {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.site-thumbnail-stats {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Badge Display */
+.badge {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  border: 2px solid #ffd700;
+  background: linear-gradient(135deg, #fff 0%, #ffe 100%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 32px;
+  margin: 2px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.badge:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.badge.legendary {
+  border-color: #ff00ff;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.badge.rare {
+  border-color: #0099ff;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
+}
+
+/* XP Bar */
+.xp-bar {
+  background: #333;
+  border: 2px inset #666;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  background: linear-gradient(90deg, #00ff00 0%, #00cc00 100%);
+  height: 100%;
+  transition: width 0.5s ease-out;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.xp-bar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 0.9rem;
+}
+
+/* Guestbook Entry */
+.guestbook-entry {
+  background: #fffacd;
+  border: 2px dashed #999;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.guestbook-entry-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.guestbook-entry-avatar {
+  font-size: 1.5rem;
+}
+
+.guestbook-entry-message {
+  margin: 0.5rem 0;
+}
+
+.guestbook-entry-ascii {
+  background: #f0f0f0;
+  padding: 0.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.guestbook-entry-timestamp {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: right;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d0d0d0;
+  border: 1px solid #808080;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ffffff 0%, #c0c0c0 100%);
+  border: 2px outset #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffff99 0%, #cccc00 100%);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/* Comic Sans for fun elements */
+.comic-sans {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Impact for headers */
+.impact {
+  font-family: 'Impact', sans-serif;
+}
+
+/* Times New Roman for elegant text */
+.times {
+  font-family: 'Times New Roman', serif;
+}
+
+/* Courier for code */
+.courier {
+  font-family: 'Courier New', monospace;
+}
+
+/* Drop shadow text */
+.drop-shadow {
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Colorful text */
+.rainbow-text {
+  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}

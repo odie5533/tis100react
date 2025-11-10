@@ -1,0 +1,171 @@
+.webring-detail-page {
+  padding-bottom: 2rem;
+}
+
+.ring-banner {
+  background: linear-gradient(135deg, #9370db 0%, #ba55d3 100%);
+  color: white;
+  padding: 2rem;
+}
+
+.ring-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ring-badge-large {
+  font-size: 6rem;
+  flex-shrink: 0;
+}
+
+.ring-info {
+  flex: 1;
+}
+
+.ring-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ring-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.ring-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ring-meta a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.join-ring-button {
+  flex-shrink: 0;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+}
+
+.ring-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ring-member-site {
+  position: relative;
+}
+
+.member-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #ff6600;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 10;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ring-nav-preview {
+  padding: 1rem;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-buttons .retro-button {
+  width: 100%;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.mock-chat {
+  background: #f9f9f9;
+  border: 2px inset #999;
+  padding: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.chat-message {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.chat-message strong {
+  color: #9370db;
+}
+
+.chat-input-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-input-area input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.ring-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #f9f9f9;
+  border-left: 4px solid #9370db;
+}
+
+@media (max-width: 1024px) {
+  .ring-content {
+    grid-template-columns: 1fr;
+  }
+
+  .ring-sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .ring-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ring-title {
+    font-size: 2rem;
+  }
+
+  .ring-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

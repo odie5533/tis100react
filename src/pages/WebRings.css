@@ -1,0 +1,115 @@
+.webrings-page {
+  padding-bottom: 2rem;
+}
+
+.categories-filter {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+.category-tag {
+  display: inline-block;
+  background: #e0e0ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 2px solid #9370db;
+  font-weight: bold;
+}
+
+.webrings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.webring-card {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.webring-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.webring-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.webring-badge {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.webring-name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #9370db;
+}
+
+.webring-category {
+  display: inline-block;
+  background: #ffd700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.webring-description {
+  margin: 1rem 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.webring-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.webring-preview {
+  margin-top: auto;
+}
+
+.webring-preview h4 {
+  margin-bottom: 0.5rem;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.webring-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #ddd;
+  text-align: center;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #99ff99 0%, #00cc00 100%);
+  color: white;
+  border: 2px outset #99ff99;
+}
+
+@media (max-width: 768px) {
+  .webrings-grid {
+    grid-template-columns: 1fr;
+  }
+}

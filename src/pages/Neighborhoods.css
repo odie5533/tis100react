@@ -1,0 +1,104 @@
+.neighborhoods-page {
+  padding-bottom: 2rem;
+}
+
+.neighborhoods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.neighborhood-card {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-width: 4px;
+}
+
+.neighborhood-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.neighborhood-header {
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.neighborhood-banner {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.neighborhood-name {
+  font-family: 'Impact', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.neighborhood-body {
+  padding: 1.5rem;
+}
+
+.neighborhood-description {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.neighborhood-stats {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.neighborhood-preview h4 {
+  margin-bottom: 0.5rem;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.preview-sites {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.preview-site {
+  font-size: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.neighborhood-footer {
+  padding: 1rem 1.5rem;
+  background: #f0f0f0;
+  text-align: center;
+  font-weight: bold;
+  color: #9370db;
+}
+
+.view-all-link {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.neighborhood-card:hover .view-all-link {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .neighborhoods-grid {
+    grid-template-columns: 1fr;
+  }
+}
