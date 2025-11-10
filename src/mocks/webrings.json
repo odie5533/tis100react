@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "The 90s Nostalgia Ring",
+    "description": "A collection of sites dedicated to the golden age of the internet.",
+    "members": 42
+  },
+  {
+    "id": 2,
+    "name": "The Animated GIF Fan Club",
+    "description": "For lovers of all things animated GIF. Tiled backgrounds and under construction signs welcome.",
+    "members": 1337
+  },
+  {
+    "id": 3,
+    "name": "The HTML & CSS Artists Guild",
+    "description": "Pushing the limits of what's possible with just HTML and CSS. No JavaScript allowed!",
+    "members": 256
+  },
+  {
+    "id": 4,
+    "name": "The Personal Homepage Ring",
+    "description": "A ring for personal homepages, blogs, and online diaries.",
+    "members": 123
+  }
+]

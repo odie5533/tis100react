@@ -1,0 +1,12 @@
+body {
+  background-color: #c0c0c0; /* Silver */
+  color: #000000; /* Black */
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+main {
+  padding: 1rem;
+}

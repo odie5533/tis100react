@@ -1,0 +1,59 @@
+.create-container {
+  background-color: #ffffff;
+  border: 5px solid #00ff00; /* Green */
+  padding: 1rem;
+  box-shadow: 10px 10px 0px #000000;
+}
+
+.create-container h2 {
+  font-size: 2rem;
+  color: #0000ff; /* Blue */
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #ff0000; /* Red */
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-form label {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.create-form input,
+.create-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  margin-top: 0.5rem;
+}
+
+.url-input {
+  display: flex;
+  align-items: center;
+}
+
+.url-input span {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.create-form button {
+  background-color: #ff00ff; /* Magenta */
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 5px outset #ffff00; /* Yellow */
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.create-form button:hover {
+  background-color: #ffff00; /* Yellow */
+  color: #000000;
+  border-color: #ff00ff; /* Magenta */
+}

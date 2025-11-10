@@ -1,0 +1,49 @@
+.profile-container {
+  background-color: #ffffff;
+  border: 5px solid #0000ff; /* Blue */
+  padding: 1rem;
+  box-shadow: 10px 10px 0px #000000;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px dotted #ff00ff; /* Magenta */
+  margin-right: 2rem;
+}
+
+.websites-section h3 {
+  font-size: 1.5rem;
+  color: #ff0000; /* Red */
+  border-bottom: 3px dashed #00ff00; /* Green */
+}
+
+.websites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.website-card {
+  border: 2px solid #000000;
+  text-align: center;
+}
+
+.website-card img {
+  width: 100%;
+  height: auto;
+}
+
+.website-card p {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #ffff00; /* Yellow */
+  color: #000000;
+}

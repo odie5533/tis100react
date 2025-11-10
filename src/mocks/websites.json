@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "My Awesome GeoCities Site",
+    "url": "/~retro/1",
+    "screenshot": "https://via.placeholder.com/300x200.png?text=My+First+Site"
+  },
+  {
+    "id": 2,
+    "title": "Cool Links and Stuff",
+    "url": "/~retro/2",
+    "screenshot": "https://via.placeholder.com/300x200.png?text=Link+Collection"
+  },
+  {
+    "id": 3,
+    "title": "Under Construction Page",
+    "url": "/~retro/3",
+    "screenshot": "https://via.placeholder.com/300x200.png?text=Coming+Soon"
+  }
+]

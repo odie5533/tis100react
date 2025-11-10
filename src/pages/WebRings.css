@@ -1,0 +1,56 @@
+.webrings-container {
+  background-color: #ffffff;
+  border: 5px solid #ffff00; /* Yellow */
+  padding: 1rem;
+  box-shadow: 10px 10px 0px #000000;
+}
+
+.webrings-container h2 {
+  font-size: 2rem;
+  color: #ff00ff; /* Magenta */
+  text-align: center;
+  border-bottom: 5px groove #00ffff; /* Cyan */
+}
+
+.webrings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.webring-card {
+  border: 3px dashed #000080; /* Navy Blue */
+  padding: 1rem;
+}
+
+.webring-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #008000; /* Green */
+}
+
+.webring-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.webring-footer span {
+  font-weight: bold;
+}
+
+.webring-footer button {
+  background-color: #c0c0c0; /* Silver */
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 3px outset #808080; /* Gray */
+  cursor: pointer;
+}
+
+.webring-footer button:hover {
+  background-color: #808080; /* Gray */
+  color: #ffffff;
+  border-color: #c0c0c0; /* Silver */
+}
