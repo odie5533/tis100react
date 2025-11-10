@@ -1,0 +1,32 @@
+body {
+  background-color: #000080; /* Navy Blue */
+  color: #FFFFFF; /* White */
+  font-family: 'Comic Sans MS', 'Impact', 'Times New Roman', 'Arial', 'Verdana', 'Georgia', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.imgur.com/8Qqd2Yt.gif'); /* Tiled background */
+  background-repeat: repeat;
+}
+
+a {
+  color: #00FFFF; /* Cyan */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: #FF00FF; /* Magenta */
+  text-shadow: 2px 2px #000000;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #C0C0C0; /* Silver */
+  border: 4px outset #808080; /* Gray */
+  padding: 10px;
+}
