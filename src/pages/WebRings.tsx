@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { mockWebRings } from '../data/mockData';
-import { WebRing } from '../types';
+import type { WebRing } from '../types';
 import './WebRings.css';
 
 export default function WebRings() {

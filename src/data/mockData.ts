@@ -1,4 +1,4 @@
-import { User, Website, WebRing, Badge, Achievement, Widget } from '../types';
+import type { User, Website, WebRing, Badge, Achievement, Widget } from '../types';
 
 // Mock users
 export const mockUsers: User[] = [

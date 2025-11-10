@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { mockWebsites } from '../data/mockData';
-import { Website } from '../types';
+import type { Website } from '../types';
 import './Gallery.css';
 
 export default function Gallery() {
